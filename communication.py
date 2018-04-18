@@ -44,7 +44,7 @@ readVulnerability = 1
 readVulnerability_2 = 1
 imposterMode = 1
 isSilent = 1
-globalLog = 0;
+globalLog
 
 def setVars(passedReadVulnerability, passedReadVulnerability_2,passedImposterMode, publicLogName, moderatorLogName):
     #descriptions of these variables can be seen in the config file
@@ -177,6 +177,7 @@ def send(msg, pipe):
             if len(msg)!=0:
                 msg='(echo :%s:%s > %s%sD/%s) 2> /dev/null &'%(sender,msg,pipeRoot,pipe,pipe)
                 o=os.popen(msg)
+                send(msg, globalLog)
 
     except Exception, p:
         pass
