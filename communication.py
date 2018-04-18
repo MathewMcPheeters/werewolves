@@ -44,6 +44,8 @@ readVulnerability = 1
 readVulnerability_2 = 1
 imposterMode = 1
 isSilent = 1
+globalLog = 0;
+
 def setVars(passedReadVulnerability, passedReadVulnerability_2,passedImposterMode, publicLogName, moderatorLogName):
     #descriptions of these variables can be seen in the config file
     global readVulnerability, readVulnerability_2,imposterMode, logName, mLogName
@@ -136,6 +138,8 @@ def connect(num, name):
                 duration = 1
                 send('Game already started.  Please wait for next game.', outPipe)
                 send('close', outPipe)
+            else
+                globalLog = outPipe;
             time.sleep(duration)
     except:
         pass
