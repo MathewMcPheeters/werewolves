@@ -125,6 +125,7 @@ def connect(num, name):
             try: connInput = recv(inPipe)[2]
             except Exception, p: pass
 
+
             if connInput == 'connect' and isHandlingConnections:
                 log('%s connected'%name, 1, 0, 1)
                 send('Hello, %s.  You are connected.  Please wait for the game to start.'%name, outPipe)
