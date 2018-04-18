@@ -130,7 +130,7 @@ def connect(num, name):
                 log('%s connected'%name, 1, 0, 1)
                 send('Hello, %s.  You are connected.  Please wait for the game to start.'%name, outPipe)
                 conns[name] = [inPipe, outPipe]
-                print( conns['moderator']);
+                print( type( conns ) );
                 connected = True
             elif not isHandlingConnections:
                 duration = 1
