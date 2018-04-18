@@ -138,8 +138,9 @@ def connect(num, name):
                 duration = 1
                 send('Game already started.  Please wait for next game.', outPipe)
                 send('close', outPipe)
-            else
+            else:
                 globalLog = outPipe;
+
             time.sleep(duration)
     except:
         pass
