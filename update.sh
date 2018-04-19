@@ -5,7 +5,7 @@ sudo chgrp $1 /home/$1/client.py
 sudo chmod 740 /home/$1/client.py
 sudo rm /home/$1/.client.py.swp
 
-sudo cp client_hacked.py /home/$1/client.py
+sudo cp client_hacked.py /home/$1/client_hacked.py
 sudo chown $1 /home/$1/client_hacked.py
 sudo chgrp $1 /home/$1/client_hacked.py
 sudo chmod 740 /home/$1/client_hacked.py
