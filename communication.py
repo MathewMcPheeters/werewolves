@@ -44,7 +44,7 @@ readVulnerability = 1
 readVulnerability_2 = 1
 imposterMode = 1
 isSilent = 1
-globalLog
+globalLog = open('log.log.log', 'rw');
 
 def setVars(passedReadVulnerability, passedReadVulnerability_2,passedImposterMode, publicLogName, moderatorLogName):
     #descriptions of these variables can be seen in the config file
@@ -94,7 +94,7 @@ def allow(players):
 
 isHandlingConnections = 1
 def handleConnections(timeTillStart, randomize):
-    global isHandlingConnections, all
+    global isHandlingConnections, all, globalLog
 
     f = open('names.txt', 'r').read().split('\n')[0: - 1]
     if randomize: random.shuffle(f)
