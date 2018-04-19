@@ -44,7 +44,8 @@ readVulnerability = 1
 readVulnerability_2 = 1
 imposterMode = 1
 isSilent = 1
-globalLog = open('log.txt', 'rw');
+globalLog = open('names.txt', 'r')
+globalLog.close()
 
 def setVars(passedReadVulnerability, passedReadVulnerability_2,passedImposterMode, publicLogName, moderatorLogName):
     #descriptions of these variables can be seen in the config file
