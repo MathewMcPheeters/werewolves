@@ -7,7 +7,7 @@
 test=0
 
 #duration (in seconds) for the corresponding phase of the game
-timeTillStart=60
+timeTillStart=180
 wolfTalkTime=60
 wolfVoteTime=60
 townTalkTime=180
@@ -45,7 +45,7 @@ randomizeNames=0
 #the second method has the server issuing an 'open' of each player's pipe,
 #    such that it does not spawn a new process.
 #values: 1 - 'cat' method; 0 - 'open' method
-readVulnerability=0
+readVulnerability=1
 
 # pipe read vulnerability
 # This is a vulnerability similar to readVulnerability
@@ -61,7 +61,7 @@ moderatorLogMode=0
 #players can pose as other players in group chat with this vulnerability on
 #1 - players can pose as other players
 #0 - players are unable to pose as other players
-imposterMode=0
+imposterMode=1
 
 #wolf voting variables: 
 #These variables enable the ability to force communication during chat phases
