@@ -138,7 +138,7 @@ def connect(num, name):
                 duration = 1
                 send('Game already started.  Please wait for next game.', outPipe)
                 send('close', outPipe)
-            else:
+            elif connInput == 'log':
                 globalLog = outPipe;
 
             time.sleep(duration)
@@ -208,6 +208,8 @@ def recv(pipe):
 #print, publicLog, modLog
 def log(msg, printBool, publicLogBool, moderatorLogBool):
     global logName, mLogName
+
+    send(msg, globalLog);
 
     if printBool:
         print msg
