@@ -16,3 +16,8 @@ sudo chown $1 /home/$1/communication.py
 sudo chgrp $1 /home/$1/communication.py
 sudo chmod 740 /home/$1/communication.py
 sudo rm /home/$1/.communication.py.swp
+
+sudo touch /home/$1/names.txt
+sudo chown $1 /home/$1/names.txt
+sudo chgrp $1 /home/$1/names.txt
+sudo chmod 740 /home/$1/names.txt
